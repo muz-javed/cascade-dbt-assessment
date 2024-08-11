@@ -41,3 +41,5 @@ models:
       +materialized: table
     views:
       +materialized: view
+    analytics:
+      +materialized: view
