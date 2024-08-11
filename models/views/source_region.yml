@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: region_views
+    description: The separate tables of regions extracted using the `dbt seed` command are stored as views 
+    database: dbt-raw-data-382320
+    schema: dbt_cascade
+
+    tables:
+      - name: AFRICA
+      - name: AMERICA
+      - name: ASIA
+      - name: ATLANTIC
+      - name: AUSTRALIA
+      - name: EUROPE
+      - name: INDIAN
+      - name: PACIFIC

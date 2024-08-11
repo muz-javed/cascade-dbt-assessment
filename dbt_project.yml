@@ -37,6 +37,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 models:
   dbt_cascade_assessment:
-    # Applies to all files under models/example/
+    data-normalization:
+      +materialized: table
     views:
       +materialized: view
