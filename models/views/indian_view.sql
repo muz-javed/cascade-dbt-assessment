@@ -1,2 +1,1 @@
-select * from
-{{ source('region_views', 'INDIAN') }}
+select * from {{ source('region_views', 'INDIAN') }}
