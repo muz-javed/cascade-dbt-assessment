@@ -25,3 +25,4 @@ from
         select 'PACIFIC' as region, *
         from {{ ref("pacific_view") }}
     )
+    
