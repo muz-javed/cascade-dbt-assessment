@@ -32,7 +32,7 @@ for sheet_name in sheet_names:
 
 ### Step 4: Analytics
 
-#### [*Task A*](https://github.com/muz-javed/cascade-dbt-assessment/blob/0af6471d0622abb6c7a881dbacebbccc5cbbad14/models/analytics/task_4a.sql)
+#### [*Task A*](https://github.com/muz-javed/cascade-dbt-assessment/blob/65ee7c7c96604756d205889aa2b921b9532f9bc2/models/analytics/task_4a.sql)
 The task was that for each month we need to find the region to which maximum number of agents report to. The solution to the task is:
 
 ![task_4a](https://github.com/muz-javed/cascade-dbt-assessment/blob/ecea7e1ff0538a7248651797b5fefb850cb266ad/Task%204A.PNG)
