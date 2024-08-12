@@ -40,6 +40,6 @@ models:
     data-normalization:
       +materialized: table
     raw_data:
-      +materialized: view
+      +materialized: table
     analytics:
       +materialized: view
