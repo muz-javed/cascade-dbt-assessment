@@ -27,9 +27,18 @@ for sheet_name in sheet_names:
 ### Step 3: Create Unified Schema & ER Diagram
 - Model [combined_data_1NF](https://github.com/muz-javed/cascade-dbt-assessment/blob/2a185da26206fc895b508dc497b9bea4e5662210/models/raw_data/combined_data_1NF.sql) is created which is a union of all the CSV files.
 - Following is the entity-relationship diagram (ERD) for the dataset currently in 1NF.
-![ERD Diagram](https://github.com/muz-javed/cascade-dbt-assessment/blob/ab6ed32b8ba302f1c83399e1663ab681264c2f54/ERD.PNG)
+![ERD Diagram](https://github.com/muz-javed/cascade-dbt-assessment/blob/9f40571c619d959ce9652a2af8484f49ea48c902/Entity-Relationship%20Diagram.PNG)
 - The above mentioned are stored as tables in the db.
+- Test of unqiuness and not null are applied to all the **id** columns in the above tables.
+- Custom test is performed for checking the boolean values in the **has_hat**, **has_jacket** and **has_weapon** columns.
 
+```dbt
+{% test is_boolean(model, column_name) %}
+select *
+from {{ model }}
+where {{ column_name }} not in (true, false)
+{% endtest %}
+```
 ### Step 4: Analytics
 
 #### [*Task A*](https://github.com/muz-javed/cascade-dbt-assessment/blob/65ee7c7c96604756d205889aa2b921b9532f9bc2/models/analytics/task_4a.sql)
