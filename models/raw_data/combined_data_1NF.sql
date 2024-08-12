@@ -2,26 +2,26 @@ select *
 from
     (
         select 'Africa' as region, *
-        from {{ source('region_views', 'AFRICA') }}
+        from {{ ref('africa_view') }}
         union all
         select 'AMERICA' as region, *
-        from {{ source('region_views', 'AMERICA') }}
+        from {{ ref('america_view') }}
         union all
         select 'ASIA' as region, *
-        from {{ source('region_views', 'ASIA') }}
+        from {{ ref('asia_view') }}
         union all
         select 'ATLANTIC' as region, *
-        from {{ source('region_views', 'ATLANTIC') }}
+        from {{ ref('atlantic_view') }}
         union all
         select 'AUSTRALIA' as region, *
-        from {{ source('region_views', 'AUSTRALIA') }}
+        from {{ ref('australia_view') }}
         union all
         select 'EUROPE' as region, *
-        from {{ source('region_views', 'EUROPE') }}
+        from {{ ref('europe_view') }}
         union all
         select 'INDIAN' as region, *
-        from {{ source('region_views', 'INDIAN') }}
+        from {{ ref('indian_view') }}
         union all
         select 'PACIFIC' as region, *
-        from {{ source('region_views', 'PACIFIC') }}
+        from {{ ref('pacific_view') }}
     )

@@ -7,6 +7,7 @@ select
     date_agent,
     city_id,
     city_agent_id,
+    country_id,
     has_weapon,
     has_hat,
     has_jacket,
@@ -20,7 +21,8 @@ from
             witness.id as witness_id,
             agent.id as agent_id,
             city.id as city_id,
-            city_agent_df.id as city_agent_id
+            city_agent_df.id as city_agent_id,
+            country_df.id as country_id
 
         from {{ ref("combined_data_1NF") }} as comb_df
 
@@ -41,6 +43,9 @@ from
         left join
             {{ ref("city_agent") }} as city_agent_df
             on city_agent_df.city_agent = comb_df.city_agent
-            and city_agent_df.country = comb_df.country
+
+        left join
+            {{ ref("country") }} as country_df
+            on country_df.country = comb_df.country
 
     )
