@@ -39,8 +39,6 @@ models:
   dbt_cascade_assessment:
     data-normalization:
       +materialized: table
-    views:
-      +materialized: table
     raw_data:
       +materialized: view
     analytics:
