@@ -21,7 +21,7 @@ for sheet_name in sheet_names:
 ```
 
 ### Step 2: Load the files in the db
-- The CSV files are upload in the [seeds](https://github.com/muz-javed/cascade-dbt-assessment/tree/5d09e2ff1574e8dcda9c4cb2010f7c276b854240/seeds) folder using the upload files functionality in github.
+- The CSV files are uploaded in the [seeds](https://github.com/muz-javed/cascade-dbt-assessment/tree/5d09e2ff1574e8dcda9c4cb2010f7c276b854240/seeds) folder using the upload files functionality in github.
 - The files are then pulled to the directory in dbt cloud and the **dbt seeds** command is used to load the raw CSV files into the db.
 
 ### Step 3: Create Unified Schema & ER Diagram
