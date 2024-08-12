@@ -1,4 +1,4 @@
-select behavior top_3_behaviors
+select behavior Top_3_Behaviors
 
 from
 

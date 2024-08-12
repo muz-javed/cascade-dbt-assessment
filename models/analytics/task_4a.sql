@@ -1,4 +1,4 @@
-select month, region most_likely_region
+select Month, region Most_Likely_Region
 from
 
     (
@@ -14,9 +14,12 @@ from
                 select
                     extract(month from date_witness) month_num,
                     format_date('%B', date_witness) month,
-                    region,
+                    b.city_agent region,
                     count(*) sightings
-                from {{ ref("sightings") }}
+
+                from {{ ref("sightings") }} a
+                left join {{ ref('city_agent') }} b
+                on a.city_agent_id = b.id
                 group by 1, 2, 3
             )
 

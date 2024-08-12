@@ -1,4 +1,4 @@
-select Month, Behavior_Matched_Prob
+select Month, Top_3_Behavior_Matched_Prob 
 
 from
 
@@ -13,7 +13,7 @@ from
         )
         / count(*),
         4
-    ) behavior_matched_prob
+    ) Top_3_Behavior_Matched_Prob
 
 from {{ ref("sightings") }} sightings
 
