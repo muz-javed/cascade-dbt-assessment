@@ -33,24 +33,22 @@ for sheet_name in sheet_names:
 ### Step 4: Analytics
 
 #### [*Task A*](https://github.com/muz-javed/cascade-dbt-assessment/blob/0af6471d0622abb6c7a881dbacebbccc5cbbad14/models/analytics/task_4a.sql)
-The task was that for each month we need to find the region to which maximum number of agents report to. 
-The solution to the task is:
+The task was that for each month we need to find the region to which maximum number of agents report to. The solution to the task is:
+
 ![task_4a](https://github.com/muz-javed/cascade-dbt-assessment/blob/ecea7e1ff0538a7248651797b5fefb850cb266ad/Task%204A.PNG)
 
 #### [*Task B*](https://github.com/muz-javed/cascade-dbt-assessment/blob/0af6471d0622abb6c7a881dbacebbccc5cbbad14/models/analytics/task_4b.sql)
-The task was to find the probability Ms. Sandiego being armed and wearing a jacket but not wearing a hat.
-The solution to the task is:
+The task was to find the probability Ms. Sandiego being armed and wearing a jacket but not wearing a hat. It has been observed that there is a fairly low probability of Ms. Sandiego being armed and wearing a jacket but not wearing a hat. It averages around **3.92%**. The solution to the task is:
+
 ![task_4b](https://github.com/muz-javed/cascade-dbt-assessment/blob/62ea1c0569009112935df0e8a146e3a2a9385699/Task%204B.PNG)
 
-It has been observed that there is a fairly low probability of Ms. Sandiego being armed and wearing a jacket but not wearing a hat. It averages around **3.92%**.
-
 #### [*Task C*](https://github.com/muz-javed/cascade-dbt-assessment/blob/0af6471d0622abb6c7a881dbacebbccc5cbbad14/models/analytics/task_4c.sql)
-The task was to find the 3 most occuring behaviors of Ms. Sandiego. 
-The solution to the task is:
+The task was to find the 3 most occuring behaviors of Ms. Sandiego. The solution to the task is:
+
 ![task_4c](https://github.com/muz-javed/cascade-dbt-assessment/blob/62ea1c0569009112935df0e8a146e3a2a9385699/Task%204C.PNG)
 
 #### [*Task D*](https://github.com/muz-javed/cascade-dbt-assessment/blob/0af6471d0622abb6c7a881dbacebbccc5cbbad14/models/analytics/task_4d.sql)
-The task was to find the probability Ms Sandiego exhibiting any of the 3 behaviors, for each month, found in Task C.
-The solution to the task is:
+The task was to find the probability Ms Sandiego exhibiting any of the 3 behaviors, for each month, found in Task C. The solution to the task is:
+
 ![task_4d](https://github.com/muz-javed/cascade-dbt-assessment/blob/62ea1c0569009112935df0e8a146e3a2a9385699/Task%204D.PNG)
 
