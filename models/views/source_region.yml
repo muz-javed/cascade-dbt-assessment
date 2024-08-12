@@ -15,3 +15,48 @@ sources:
       - name: EUROPE
       - name: INDIAN
       - name: PACIFIC
+      - name: witness_agent
+        description: witness_agent is the table consisting of the entire list of agent and witness names along with their roles.
+        columns:
+          - name: id
+            tests:
+            - unique
+            - not_null
+
+      - name: city_agent
+        description: city_agent is the table consisting of the headquarter city along with the country
+        columns:
+          - name: id
+            tests:
+            - unique
+            - not_null
+
+      - name: perpetrator_location
+        description: includes the geographical information of the sighting 
+        columns:
+          - name: id
+            tests:
+            - unique
+            - not_null
+
+      - name: sightings
+        description: detailed list of all the sightings
+        columns:
+          - name: id
+            tests:
+            - unique
+            - not_null
+          - name: has_weapon
+            description: the column can only have boolean values.
+            tests:
+              - is_boolean
+          - name: has_jacket
+            description: the column can only have boolean values.
+            tests:
+              - is_boolean
+          - name: has_hat
+            description: the column can only have boolean values.
+            tests:
+              - is_boolean
+                  
+                  
