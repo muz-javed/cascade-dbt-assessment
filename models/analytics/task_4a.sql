@@ -10,7 +10,7 @@ from
 
         from
 
-            (
+            ( 
                 select
                     extract(month from date_witness) month_num,
                     format_date('%B', date_witness) month,
